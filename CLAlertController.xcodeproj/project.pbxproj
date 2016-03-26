@@ -13,8 +13,7 @@
 		4D5FCDFB1CA6946A00AD1F96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5FCDF91CA6946A00AD1F96 /* Main.storyboard */; };
 		4D5FCDFD1CA6946A00AD1F96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D5FCDFC1CA6946A00AD1F96 /* Assets.xcassets */; };
 		4D5FCE001CA6946A00AD1F96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5FCDFE1CA6946A00AD1F96 /* LaunchScreen.storyboard */; };
-		4D5FCE0B1CA6946A00AD1F96 /* CLAlertControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FCE0A1CA6946A00AD1F96 /* CLAlertControllerTests.m */; };
-		4D5FCE161CA6946A00AD1F96 /* CLAlertControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FCE151CA6946A00AD1F96 /* CLAlertControllerUITests.m */; };
+		4D5FCE261CA6954200AD1F96 /* CLAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FCE251CA6954200AD1F96 /* CLAlertController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +45,9 @@
 		4D5FCDFF1CA6946A00AD1F96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D5FCE011CA6946A00AD1F96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D5FCE061CA6946A00AD1F96 /* CLAlertControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLAlertControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D5FCE0A1CA6946A00AD1F96 /* CLAlertControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLAlertControllerTests.m; sourceTree = "<group>"; };
-		4D5FCE0C1CA6946A00AD1F96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D5FCE111CA6946A00AD1F96 /* CLAlertControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLAlertControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D5FCE151CA6946A00AD1F96 /* CLAlertControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLAlertControllerUITests.m; sourceTree = "<group>"; };
-		4D5FCE171CA6946A00AD1F96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D5FCE241CA6954200AD1F96 /* CLAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLAlertController.h; path = Source/CLAlertController.h; sourceTree = "<group>"; };
+		4D5FCE251CA6954200AD1F96 /* CLAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLAlertController.m; path = Source/CLAlertController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +78,8 @@
 		4D5FCDE41CA6946A00AD1F96 = {
 			isa = PBXGroup;
 			children = (
+				4D5FCE231CA6952E00AD1F96 /* Source */,
 				4D5FCDEF1CA6946A00AD1F96 /* CLAlertController */,
-				4D5FCE091CA6946A00AD1F96 /* CLAlertControllerTests */,
-				4D5FCE141CA6946A00AD1F96 /* CLAlertControllerUITests */,
 				4D5FCDEE1CA6946A00AD1F96 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -122,22 +118,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4D5FCE091CA6946A00AD1F96 /* CLAlertControllerTests */ = {
+		4D5FCE231CA6952E00AD1F96 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				4D5FCE0A1CA6946A00AD1F96 /* CLAlertControllerTests.m */,
-				4D5FCE0C1CA6946A00AD1F96 /* Info.plist */,
+				4D5FCE241CA6954200AD1F96 /* CLAlertController.h */,
+				4D5FCE251CA6954200AD1F96 /* CLAlertController.m */,
 			);
-			path = CLAlertControllerTests;
-			sourceTree = "<group>";
-		};
-		4D5FCE141CA6946A00AD1F96 /* CLAlertControllerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4D5FCE151CA6946A00AD1F96 /* CLAlertControllerUITests.m */,
-				4D5FCE171CA6946A00AD1F96 /* Info.plist */,
-			);
-			path = CLAlertControllerUITests;
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D5FCDF81CA6946A00AD1F96 /* ViewController.m in Sources */,
+				4D5FCE261CA6954200AD1F96 /* CLAlertController.m in Sources */,
 				4D5FCDF51CA6946A00AD1F96 /* AppDelegate.m in Sources */,
 				4D5FCDF21CA6946A00AD1F96 /* main.m in Sources */,
 			);
@@ -280,7 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D5FCE0B1CA6946A00AD1F96 /* CLAlertControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +275,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D5FCE161CA6946A00AD1F96 /* CLAlertControllerUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +402,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CLAlertController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hmhm.CLAlertController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,6 +414,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CLAlertController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hmhm.CLAlertController;
 				PRODUCT_NAME = "$(TARGET_NAME)";

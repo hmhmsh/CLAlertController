@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+ // import
+#import "CLAlertController.h"
 
-@interface ViewController : UIViewController
+// delegate設定
+@interface ViewController : UIViewController<ClAlertControllerDelegate>
 
 
 @end
